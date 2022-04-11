@@ -103,7 +103,7 @@ For additional kernel configurations check [My-Xenomai-Installation](https://git
  #### After reboot, if you see GRUB screen, select Advanced Options for Ubuntu, and select compiled RT kernel version to start
  ## Then to make sure about installation, check kernel version. 
      uname -v
- ### -----------------------------------------------------------------------------------------------------------------
+ ### -----------------------------------------------------------------------
  ### If your system doesn't start after building, check this thread [Compressing initramfs](https://stackoverflow.com/questions/51669724/install-rt-linux-patch-for-ubuntu) and apply steps below. 
   Restart your computer start with non-rt kernel. Open your terminal:
   ### Step 1 - Strip the kernel modules
@@ -124,4 +124,4 @@ For additional kernel configurations check [My-Xenomai-Installation](https://git
   
     sudo update-initramfs -u -k 5.9.1-rt20
     sudo update-grub2
- ### -----------------------------------------------------------------------------------------------------------------
+ ### --------------------------------------------------------------------------------
