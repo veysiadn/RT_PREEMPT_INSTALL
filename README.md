@@ -15,7 +15,7 @@ sudo apt-get install intltool autoconf-archive libpcre3-dev libglib2.0-dev libgt
 sudo apt-get install libnuma-dev libssl-dev libtool libncurses5 libncurses5-dev autogen libudev-dev libelf-dev stress -y
 ```   
 ```
-sudo apt-get install kernel-package fakeroot zlib1g-dev bin86 g++ bison -y
+sudo apt-get install kernel-package fakeroot zlib1g-dev bin86 g++ bison cpufrequtils -y
 ```
 ## RT_PREEMPT patch Installation 
 #### You can download kernel version from                   : [Linux Kernel Sources](https://mirrors.edge.kernel.org/pub/linux/kernel/) 
