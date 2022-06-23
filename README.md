@@ -1,5 +1,13 @@
 # RT_PREEMPT_INSTALL
   This repository contains installation of RT_PREEMPT patch on Ubuntu 20.04.4 LTS ; kernel 5.9.1. If you want to install with different kernel, installation steps are same, you just have to download your desired kernel sources from [Linux Kernel Sources](https://mirrors.edge.kernel.org/pub/linux/kernel/) and [RT_PREEMPT Patch Sources](https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/). Hope this repository will save time for you.
+#### Note that, if you want better real-time performance you will need to change several BIOS settings. It is recommended to disable management related settings. Mostly this settings scales your CPU frequency based on the load. However to keep constant periodicity it is important to have stable frequency. Please change BIOS settings after doing a brief search about the settings, do not follow advices blindly. Each hardware has different BIOS settings, therefore, I can not know all possible settings. Keep in mind that if you have latency in your implementation, it is a good starting point to tweak BIOS settings.
+
+##### Safe Boot - Disable
+##### Hyper-Threading - Disable
+##### System Management Mode - Disable
+##### Virtualization - Disable
+##### Power Management Related Settings - Disable
+
 
 ## Before starting to build, make sure that Safe Boot option is disabled in your BIOS settings and run commands below to get required libraries for building/installation.
 ```
